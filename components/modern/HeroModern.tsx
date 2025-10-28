@@ -214,29 +214,11 @@ export default function HeroModern() {
 
                   {/* Profile Image */}
                   <div className="relative w-full h-full flex items-center justify-center">
-                    <Image
-                      src="/images/profile.jpg"
+                    <img
+                      src="/images/profile.png"
                       alt="استشاري مزارع التسمين"
-                      fill
-                      className="object-cover"
-                      priority
-                      onError={(e) => {
-                        // Fallback to placeholder if image not found
-                        const target = e.target as HTMLImageElement;
-                        target.style.display = 'none';
-                      }}
+                      className="absolute inset-0 w-full h-full object-cover"
                     />
-                    {/* Placeholder if image not loaded */}
-                    <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-[#1B4332] to-[#40916C]">
-                      <div className="text-center text-white/60 p-8">
-                        <div className="text-6xl mb-4">👤</div>
-                        <div className="text-sm">صورة الاستشاري</div>
-                        <div className="text-xs mt-2 opacity-70">أضف الصورة في:</div>
-                        <div className="text-xs font-mono mt-1 bg-black/20 px-3 py-1 rounded">
-                          public/images/profile.jpg
-                        </div>
-                      </div>
-                    </div>
                   </div>
 
                   {/* Border Glow */}
